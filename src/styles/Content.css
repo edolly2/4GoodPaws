@@ -1,0 +1,25 @@
+:root {
+  --base-space: 1vw; /* Base space unit */
+  --golden-ratio: 1.618; /* Golden ratio for scaling */
+}
+
+main {
+  flex: 1;
+  max-width: 1200px;
+  /* width: 100%; */
+  /* width: calc(100% - var(--base-space) * var(--golden-ratio) * 2); */
+  /* height: calc(100% - var(--base-space) * var(--golden-ratio) * 2); */
+  margin: calc(var(--base-space) * var(--golden-ratio) * 2);
+  background-color: teal;
+  /* padding: calc(
+    var(--base-space) * var(--golden-ratio) * 2
+  ); Scales to 3.236vw */
+}
+
+@media screen and (min-width: 1199px) {
+  main {
+    /* margin: ; */
+    /* padding-left: calc(var(--base-space) * var(--golden-ratio) * 2);
+    padding-right: calc(var(--base-space) * var(--golden-ratio) * 2); */
+  }
+}

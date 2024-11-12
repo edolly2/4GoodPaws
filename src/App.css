@@ -1,0 +1,65 @@
+:root {
+  --base-size: 1rem; /* Starting base font size */
+  --scale: 1.618; /* Golden ratio for scaling headings */
+  --min-font: 16px; /* Minimum font size */
+  --base-space: 1vw; /* Base space unit */
+  --golden-ratio: 1.618; /* Golden ratio for scaling */
+}
+
+h1 {
+  font-size: clamp(
+    var(--min-font),
+    calc(var(--base-size) * var(--scale) * 2),
+    calc(var(--base-size) * 4.5)
+  );
+}
+
+h2 {
+  font-size: clamp(
+    var(--min-font),
+    calc(var(--base-size) * var(--scale) * 1.8),
+    calc(var(--base-size) * 3.5)
+  );
+}
+
+h3 {
+  font-size: clamp(
+    var(--min-font),
+    calc(var(--base-size) * var(--scale) * 1.6),
+    calc(var(--base-size) * 3)
+  );
+}
+
+h4 {
+  font-size: clamp(
+    var(--min-font),
+    calc(var(--base-size) * var(--scale) * 1.4),
+    calc(var(--base-size) * 2.5)
+  );
+}
+
+h5 {
+  font-size: clamp(
+    var(--min-font),
+    calc(var(--base-size) * var(--scale) * 1.2),
+    calc(var(--base-size) * 2)
+  );
+}
+
+h6 {
+  font-size: clamp(
+    var(--min-font),
+    calc(var(--base-size) * var(--scale)),
+    calc(var(--base-size) * 1.5)
+  );
+}
+
+p {
+  font-size: clamp(
+    var(--min-font),
+    calc(var(--base-size)),
+    calc(var(--base-size) * 1.25)
+  );
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
