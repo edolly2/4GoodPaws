@@ -5,10 +5,12 @@ import Layout from "./layout/Layout";
 import Content from "./layout/Content";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import SocialNavigation from "./components/SocialNavigation";
 
 function App() {
   return (
     <Layout>
+      <SocialNavigation />
       <Header />
       <Content>
         <h1>Hello</h1>
